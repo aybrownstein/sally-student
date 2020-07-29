@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Sally's Resume</title>
+</head>
+
+<body>
+    <div id="real-resume"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        function App(props) { console.log(props); return (
+        <main>{props.children}</main>
+        );} ReactDOM.render(
+        <App className='sally-main'>
+            <header>
+                <h1>Sally Student</h1>
+            </header>
+            <section className="contact"><address>
+		<ul>
+			<li><a href="mailto:sally@nowhere.com">email</a></li>
+			<li><a href="tel:123456789">phone</a></li>
+		</ul>
+	</address>
+                <img className="pic" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="picture of Sally" /></section>
+            <main>
+                <p>Sally is a diligent worker who everyone should want to hire</p>
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>2012- Graduated Highschool</li>
+                        <li>2012-2014 BA in computor Science From City College</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Employment History</h2>
+                    <ul>
+                        <li>2014-2016 Worked as Junior Developer at ABC responsabilities included Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate,
+                            voluptatibus veniam doloribus consectetur quia! Quae, eveniet?
+                        </li>
+                        <li>2016-present Web Developer at XYZ responsabilities include Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus
+                            veniam doloribus consectetur quia! Quae, eveniet?</li>
+                    </ul>
+                </section>
+            </main>
+            )</App>, document.querySelector('#real-resume'));
+    </script>
+</body>
+
+</html>
